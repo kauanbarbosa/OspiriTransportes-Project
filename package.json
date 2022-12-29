@@ -1,0 +1,46 @@
+{
+  "name": "refazendo-ospiri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o dist/bundle.js",
+    "watch": "watchify index.js -o dist/bundle.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^18.11.4",
+    "@types/oracledb": "^5.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mime": "^3.0.0",
+    "node": "^19.0.0",
+    "nodejs-gvfs-wrapper": "^1.0.5",
+    "oracledb": "^5.5.0",
+    "requirejs": "^2.3.6",
+    "watchify": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-core": "^6.26.3",
+    "babelify": "^8.0.0"
+  }
+}

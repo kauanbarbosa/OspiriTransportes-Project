@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sistema de bilhete de tranporte publico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ospiri - Serviços de transporte</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/recarga.js"></script>
+</head>
+<body>
+    <header class ="header">
+        <nav class ="header-menu"> 
+            <a class="header-menu-item">Ospiri Transportes</a> 
+            <div class ="botao-pginicial">
+                <a class ="pg-inicial" href="../index.html">Página inicial</a>
+            </div>
+            <div class ="botao-recarga">
+                <a class ="recarga" href="recarga.html">Recarga</a>
+            </div>
+            <div class ="botao-verificar">
+                <a class ="verificar" href="utilizar.html">Utilizar bilhete</a>
+            </div>
+            <div class ="botao-relatorio">
+                <a class ="verificar" href="relatorio.html">Relatório</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class= "content">
+        <section class ="main-content">
+            
+            <div class = "main-content-label"> 
+            </div> 
+        </section>
+        <h1 class="oculto" id="codigo_recarga"></h1>
+
+        <script>
+            function sorteio() { // gerando um valor aleatório da recarga 
+            return Math.floor(Math.random() * 999999);
+             }
+            resultado = sorteio();
+            document.getElementById("codigo_recarga").innerHTML = resultado;
+        </script>
+        <h1 class="pagamento">PAGAMENTO</h3>
+        <h2 class="valor" id="tipo_bilhete">BILHETE DE 7 DIAS</h2>
+        <h2 class="valor" id="valor_pago">Valor a ser pago : R$ 32,00</h2>
+        <input class="form" type="text" placeholder="Digite o código do bilhete :" id="cod_digitado" required="required">
+        <button onclick="cadastraRecarga()" class="concluir"> Concluir Compra</button>
+        
+    </main>
+
+    <footer class="footer">
+        <nav class ="footer-menu"> 
+            <div class ="botao-pginicial">
+                <a class ="pg-inicial" href="relatorio.html">Historico</a>
+            </div>
+            <div class ="botao-recarga">
+                <a class ="recarga" href="recarga.html">Recarga</a>
+            </div>
+            <div class ="botao-verificar">
+                <a class ="verificar" href="utilizar.html">Utilizar</a>
+            </div>
+            <div class="redes-sociais">
+                <a id="instagram" href="https://www.instagram.com/ospiritransportes/">Instagram: @ospiritransportes<br></a>
+                <a id="twitter" href="https://twitter.com/ospiritransp">Twitter: @ospiritransp<br></a>
+                <a id="facebook" href="https://www.facebook.com/profile.php?id=100088492035427">Facebook: Ospiri Serviços de Transporte<br></a>
+              </ul>
+            </div>
+        </nav>
+
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sistema de bilhete de tranporte publico">
+    <title>Ospiri - Serviços de transporte</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/geracao.js"></script>
+</head>
+<body>
+    <header class ="header">
+        <nav class ="header-menu"> 
+            <a class="header-menu-item">Ospiri Transportes</a> 
+            <div class ="botao-pginicial">
+                <a class ="pg-inicial" href="../index.html">Página inicial</a>
+            </div>
+            <div class ="botao-recarga">
+                <a class ="recarga" href="recarga.html">Recarga</a>
+            </div>
+            <div class ="botao-verificar">
+                <a class ="verificar" href="utilizar.html">Utilizar bilhete</a>
+            </div>
+            <div class ="botao-relatorio">
+                <a class ="verificar" href="relatorio.html">Relatório</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class= "content">
+        <section class ="main-content">
+            
+            <div class = "main-content-label">
+                <div class = "cardbilhete">
+                    <h1>Seu código gerado foi :</h1>
+                    <h1 id="cod" class="codigo_bilhete" ></h1> 
+                </div>
+                <script>
+                    var bilhetes = []
+                    function sorteio() { // gerando um valor aleatório do bilhete 
+                    return Math.floor(Math.random() * 999999);
+                     }
+                    resultado = sorteio();
+                    document.getElementById("cod").innerHTML = resultado;
+                </script>
+                <button class="button" type="button" onclick="cadastraBilhete()">Salvar</button>
+            </div> 
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class ="footer-menu"> 
+            <div class ="botao-pginicial">
+                <a class ="pg-inicial" href="relatorio.html">Historico</a>
+            </div>
+            <div class ="botao-recarga">
+                <a class ="recarga" href="recarga.html">Recarga</a>
+            </div>
+            <div class ="botao-verificar">
+                <a class ="verificar" href="utilizar.html">Utilizar</a>
+            </div>
+            <div class="redes-sociais">
+                <a id="instagram" href="https://www.instagram.com/ospiritransportes/">Instagram: @ospiritransportes<br></a>
+                <a id="twitter" href="https://twitter.com/ospiritransp">Twitter: @ospiritransp<br></a>
+                <a id="facebook" href="https://www.facebook.com/profile.php?id=100088492035427">Facebook: Ospiri Serviços de Transporte<br></a>
+              </ul>
+            </div>
+        </nav>
+
+      </footer>
+
+</body>
+</html>

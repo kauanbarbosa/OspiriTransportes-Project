@@ -1,0 +1,417 @@
+.border{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1.oculto 
+{
+    display: none;
+}
+
+form.oculto
+{
+    display: none;
+}
+
+#resultados
+{
+    flex: 1; 
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+ }
+
+ul.oculto
+{
+    display: none;
+}
+
+p.oculto
+{
+    display: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: white;
+
+}
+
+.header{
+    display: block;
+    flex-direction: row;
+    align-items: stretch;
+    padding : 20px;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom : 2px solid gray;
+    background-color : #ffff9a;
+}
+
+.header-menu{
+    display: flex;
+    gap: 32px;
+    margin: 20px;
+}
+
+.header-menu-item{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: #62003d;
+    font-weight: bold;
+    font-size: 70px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao-pginicial{
+    margin-top:150px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.pg-inicial{
+    font-family: 'Chewy', sans-serif;
+    color: #62003d;
+    font-weight: bolder;
+    font-size: 15px;
+    left: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+.botao-recarga {
+    font-family: 'Chewy', sans-serif;
+    color: #62003d;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 50%;
+    margin-top: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-relatorio {
+    font-family: 'Chewy', sans-serif;
+    color: #62003d;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 280px;
+    margin-top: 150px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.introducao {
+    display: inline;
+    align-items: center;
+    padding-top: 70px;
+}
+
+#bemvindo {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+a#instagram{
+    text-decoration: none;
+    color:#62003d;
+}
+
+a#twitter{
+    text-decoration: none;
+    color:#62003d;
+}
+
+a#facebook{
+    text-decoration: none;
+    color:#62003d;
+}
+
+.recarga {
+    text-decoration: none;
+    color: #62003d;
+}
+
+.verificar {
+    text-decoration: none;
+    color: #62003d;
+}
+.botao-verificar {
+    font-family: 'Chewy', sans-serif;
+    color: #62003d;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 210px;
+    margin-top: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+.content{
+    margin-bottom: 40px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+
+.pursuit-label{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-weight: 400px;
+    font-size: 50px;
+}
+
+.beta-label{
+    font-family: 'Kanit', sans-serif;
+    color: red;
+    font-weight: 400px;
+    font-size: 50px;
+}
+
+.main-content-label{
+    display:flex;
+    flex-direction: column;
+    gap: 100px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(128, 0, 255);
+    margin-top: 20px;
+    align-items:center ;
+}
+
+.trailer-label{
+    color: red;
+}
+
+.footer{
+    position: relative;
+    bottom: 0px; left: 0px;
+    width: 100%;
+    height: 2.5rem;
+}
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:#fafd25;
+    padding: 10px;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    align-items: center;
+    background-color: #000000;
+    height:200px;
+    padding-left: 100px;
+    color:#800080;
+}
+
+.redes-sociais{
+    font-size: 20px;
+}
+
+.button {
+    padding: 40px 10px;
+    width: 100px;
+    color: white;
+    background: purple;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #a76dd6;
+    
+}
+
+.termoaceite{
+    
+    text-align: center;
+    color : black;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.codigo_bilhete { 
+    align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  margin-top: 70px;
+  width: 300px;
+  transition: all 0.3s ease-out;
+  color : purple;
+  border-left : 3px solid yellow;
+  height: auto;
+}
+
+.cardbilhete{
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  margin-top: 70px;
+  width: 300px;
+  transition: all 0.3s ease-out;
+  color : purple;
+  border-left : 3px solid yellow;
+  height:auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+.cardv {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  margin-top: 70px;
+  width: 300px;
+  transition: all 0.3s ease-out;
+  color : purple;
+  border-left : 3px solid purple;
+}
+
+.card.v {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+
+  #valor_unico{
+    position:bottom;
+}
+
+
+#valor_duplo{
+    position:bottom;
+}
+
+.button-pagamento {
+    padding: 7px 10px;
+    width: 100px;
+    color: white;
+    background: purple;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    
+}
+
+.button-pagamento:hover {
+    cursor: pointer;
+    font-size: 20px;
+    width: 120px;
+    background-color: purple;
+}
+
+.pagamento {
+    text-align: left;
+    margin-left: 5%;
+    color : purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+}
+
+.valor {
+    text-align: center; 
+    margin-top: 5%;
+    margin-right: 50%;
+    color : purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form { 
+    position: relative; 
+    left: 1380px;
+    top: 60px;
+}
+
+.concluir {
+    position: relative; 
+    left: 1200px;
+    top: 100px;
+    padding: 7px 10px;
+    width: 100px;
+    color: white;
+    background: purple;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.concluir:hover {
+    cursor: pointer;
+    font-size: 20px;
+    width: 120px;
+    background-color: purple;
+}
+
+.input {
+    width: 50%;
+}
+
+table#lista { 
+    width: 1000px;
+    font-family: monospace;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color : red;
+}
+
+th { 
+    border: 1px solid #000;
+}
+
+td { 
+    color : purple;
+    border: 1px solid #000;
+}
+
+table.card {
+    border-left : 3px solid red;
+}
